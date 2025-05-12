@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Dataset and results (optional, if large or regenerable)
+data/
+results/
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# Logs
+*.log
+*.out
+*.err
+*.json
+
+# TensorBoard logs
+runs/
+events.out.tfevents.*
+
+# VSCode and IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+*.egg-info/
