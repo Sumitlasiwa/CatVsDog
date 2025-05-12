@@ -58,24 +58,24 @@ See notebooks/analysis.ipynb for full insights
 
 ## How to Run
  1. **Clone the repo**
-    ```bash
+   ```bash
     git clone https://github.com/your-username/your-repo-name.git
     cd CatVsDog
-```
+   ```
  2. **Create virtual environment**
-    ```bash
+   ```bash
     pythom -m venv .venv
     .venv\Scripts\activate    #Windows
-```
+   ```
  3. **Install dependencies**
-    ```bash
+   ```bash
     pip install -r requirements.txt
-```
+   ```
  4. **Run the pipeline**
     python main.py -m model_name -e epochs -bs batch_size -lr learning_rate -e early_stopping
 
     # Example: 
-    ```bash
+   ```bash
     python main.py -m resnet18 -e 15 -bs 16 -lr 0.0001 -e 3
    ```
 # Requirements
