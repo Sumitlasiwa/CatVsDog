@@ -40,7 +40,7 @@ CatVsDog/
 All models are implemented from scratch or modified using torchvision.models
 
 # Dataset
-The dataset is a binary classification problem where we have images of cats and dogs. The dataset is split into train, test, and validation sets. It is available in .jpg format int he `data/` directory.
+The dataset is a binary classification problem where we have images of cats and dogs. The dataset is split into train, test, and validation sets. It is available in .jpg format in the `data/` directory.
 
 # Training and Evaluation
 Training and evaluation are handled via train_eval.py .
@@ -61,23 +61,23 @@ See notebooks/analysis.ipynb for full insights
     ```bash
     git clone https://github.com/your-username/your-repo-name.git
     cd CatVsDog
-
+```
  2. **Create virtual environment**
     ```bash
     pythom -m venv .venv
     .venv\Scripts\activate    #Windows
-
+```
  3. **Install dependencies**
     ```bash
     pip install -r requirements.txt
-
+```
  4. **Run the pipeline**
     python main.py -m model_name -e epochs -bs batch_size -lr learning_rate -e early_stopping
 
     # Example: 
     ```bash
     python main.py -m resnet18 -e 15 -bs 16 -lr 0.0001 -e 3
-
+   ```
 # Requirements
 - Python 3.12
 - PyTorch 
@@ -89,7 +89,8 @@ See notebooks/analysis.ipynb for full insights
   Launch with:
   ```bash
   tensorboard --logdir=results/runs
-Open in browser: http://localhost:6006/
+  ```
+  Open in browser: http://localhost:6006/
     
 # Hyperparameters
 - Batch size: 16
