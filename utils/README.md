@@ -63,16 +63,20 @@ See notebooks/analysis.ipynb for full insights
     cd CatVsDog
 
  2. **Create virtual environment**
+    ```bash
     pythom -m venv .venv
     .venv\Scripts\activate    #Windows
 
  3. **Install dependencies**
+    ```bash
     pip install -r requirements.txt
 
  4. **Run the pipeline**
     python main.py -m model_name -e epochs -bs batch_size -lr learning_rate -e early_stopping
 
-    # Example: python main.py -m resnet18 -e 15 -bs 16 -lr 0.0001 -e 3
+    # Example: 
+    ```bash
+    python main.py -m resnet18 -e 15 -bs 16 -lr 0.0001 -e 3
 
 # Requirements
 - Python 3.12
@@ -83,6 +87,7 @@ See notebooks/analysis.ipynb for full insights
 
 # TensorBoard: for tracking training and validation metrics
   Launch with:
+  ```bash
   tensorboard --logdir=results/runs
 Open in browser: http://localhost:6006/
     
